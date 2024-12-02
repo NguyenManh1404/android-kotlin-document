@@ -396,3 +396,12 @@ class MainActivity : AppCompatActivity() {
 # Truyền data giữa các Fragnment và Activity
 
 ## Section 20: https://enouvo.udemy.com/course/android-app-development-with-kotlin-beginner-to-advanced/learn/lecture/42314374#overview
+
+# Submit app review
+- Hi @channel, hiện tại mình cần Android team chia ra để Submit app Android hàng tuần cho release.
+- Mỗi bạn trong team Android sẽ đảm nhiệm submit app 1 tháng. Các vấn đề merge SIT, Release sau đó submit app.
+- Hiện tại quá trình review app của Android khá lâu, trong từng tháng bạn nào đảm nhiệm submit app thì cần phải check update mới từ Google để kịp thời update cho đúng policy hàng Tháng/Quý/Năm của Google.(Các update này chủ yếu nằm từ App Content hoặc trong Inbox). Nếu bên team mình không kiểm tra và update kịp thời thì khi submit app sẽ rơi vào hàng chờ khá lâu.
+- Nên từ tuần sau nhờ các bạn Android giúp chia ra làm cho hợp lý. Duy và Anh Vinh sẽ hỗ trợ các bạn trong quá trình.
+
+# Review code
+- Những trường hợp ẩn hiện view thì mình hãy dùng **showif**

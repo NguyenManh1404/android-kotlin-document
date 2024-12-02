@@ -1,3 +1,29 @@
+# MutiLiv
+
+
+
+# run, let
+- Dùng run khi bạn muốn tập trung vào this và thực hiện các thao tác tuần tự.
+```kotlin
+val result = myObject.run {
+    // các thao tác với myObject
+    this.someFunction()
+    anotherFunction()
+    // trả về giá trị từ khối
+    "Result"
+}
+```
+- Dùng let khi bạn chỉ cần làm việc với một đối tượng không null và không cần trực tiếp sử dụng this.
+
+```kotlin
+val result = myObject?.let {
+    // các thao tác với myObject
+    it.someFunction()
+    anotherFunction()
+    // trả về giá trị từ khối
+    "Result"
+}
+```
 # Biến và hằng số
 
 - Biến (variable): Dùng từ khóa **var**. Giá trị của biến có thể thay đổi.
