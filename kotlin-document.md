@@ -319,6 +319,95 @@ do {
 
 ```
 
+# firstOrNull()
+
+- Nó an toàn khi sử dụng với mảng
+
+```kt
+fun main() {
+    val numbers = listOf(1, 3, 5, 8, 10)
+
+    val firstEven = numbers.firstOrNull { it % 2 == 0 } // Finds the first even number
+    println(firstEven) // Output: 8
+
+    val greaterThan10 = numbers.firstOrNull { it > 10 } // No number > 10
+    println(greaterThan10) // Output: null
+}
+
+
+```
+
+# when (switch case)
+
+- nêú logic có lớn hơn 2 vế điều kiện thì phải dùng switch case.
+- vế trên thoả mãn thì vế dưới ko cần chạy luôn.
+
+```kt
+when {
+        isSecondedSuperVisor -> {
+            oum.takeIf { isMaterialDocket }.getStringValue()
+        }
+
+        isMaterialDocket -> {
+            getString(R.string.docketDetailAllocatedLessOr1, oum)
+        }
+        
+        else -> {
+            getString(R.string.docketDetailAllocatedLessOr, (docketCost - getTotalCostAdded()).getCostFormat())
+        }
+    }
+
+```
+
+# for in (vòng lặp)
+- vòng lặp for bước nhảy
+```kt
+for (i in position ..  5 step 1) {
+     // abc          
+}
+
+fun main() {
+    val position = 2 // Giá trị bắt đầu của vòng lặp
+
+    // Vòng lặp chạy từ `position` đến 5 với bước nhảy là 1
+    for (i in position..5 step 1) {
+        println("Giá trị hiện tại của i: $i")
+    }
+
+    println("Vòng lặp đã hoàn thành!")
+}
+
+Log:
+Giá trị hiện tại của i: 2
+Giá trị hiện tại của i: 3
+Giá trị hiện tại của i: 4
+Giá trị hiện tại của i: 5
+Vòng lặp đã hoàn thành!
+
+---
+for (i in position..10 step 2) {
+    println("Giá trị hiện tại của i: $i")
+}
+
+Giá trị hiện tại của i: 2
+Giá trị hiện tại của i: 4
+Giá trị hiện tại của i: 6
+Giá trị hiện tại của i: 8
+Giá trị hiện tại của i: 10
+---
+for (i in 10 downTo 2 step 2) {
+    println("Giá trị hiện tại của i: $i")
+}
+
+Giá trị hiện tại của i: 10
+Giá trị hiện tại của i: 8
+Giá trị hiện tại của i: 6
+Giá trị hiện tại của i: 4
+Giá trị hiện tại của i: 2
+
+
+```
+
 # SpannableString in androidkotlin
 
 1. Mở res/layout/activity_main.xml và thêm một TextView:
@@ -469,7 +558,3 @@ fun addNumber(x:Int, y:Int): Int {
 }
 
 ```
-
-# Object and Class
-
-1.
